@@ -1,27 +1,17 @@
-# React Email Starter
+# React Email Sample
 
-A live preview right in your browser so you don't need to keep sending real emails during development.
+[React Email を使ってメールを配信する]() で使ったリポジトリ
 
 ## Getting Started
 
-First, install the dependencies:
-
 ```sh
 npm install
-# or
-yarn
 ```
-
-Then, run the development server:
 
 ```sh
-npm run dev
-# or
-yarn dev
+npm run build
 ```
 
-Open [localhost:3001](http://localhost:3001) with your browser to see the result.
-
-## License
-
-MIT License
+```sh
+npm run email
+```

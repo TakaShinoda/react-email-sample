@@ -6,7 +6,8 @@
     "dev-initial": "email dev",
     "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
     "dev": "tsup src/index.tsx --format esm,cjs --dts --external react --watch",
-    "test": "jest __tests__"
+    "test": "jest __tests__",
+    "email": "node dist/index.js"
   },
   "dependencies": {
     "@react-email/button": "^0.0.4",
