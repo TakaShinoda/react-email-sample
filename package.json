@@ -1,0 +1,38 @@
+{
+  "name": "emails",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev-initial": "email dev",
+    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
+    "dev": "tsup src/index.tsx --format esm,cjs --dts --external react --watch",
+    "test": "jest __tests__"
+  },
+  "dependencies": {
+    "@react-email/button": "^0.0.4",
+    "@react-email/container": "^0.0.4",
+    "@react-email/head": "^0.0.2",
+    "@react-email/heading": "^0.0.5",
+    "@react-email/hr": "^0.0.2",
+    "@react-email/html": "^0.0.2",
+    "@react-email/img": "^0.0.2",
+    "@react-email/link": "^0.0.2",
+    "@react-email/preview": "^0.0.2",
+    "@react-email/render": "^0.0.2",
+    "@react-email/section": "^0.0.1",
+    "@react-email/text": "^0.0.2",
+    "@sendgrid/mail": "^7.7.0",
+    "react-email": "^1.1.1"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@types/jest": "^29.2.4",
+    "@types/react": "^18.0.26",
+    "jest": "^29.3.1",
+    "jest-environment-jsdom": "^29.3.1",
+    "ts-jest": "^29.0.3",
+    "tsup": "6.2.3",
+    "typescript": "^4.9.4"
+  }
+}
