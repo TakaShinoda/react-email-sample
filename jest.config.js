@@ -1,3 +1,4 @@
+/** @type {import('jest').Config} */
 module.exports = {
   roots: ["<rootDir>/src"],
   testMatch: [
@@ -5,7 +6,6 @@ module.exports = {
     "**/?(*.)+(spec|test).+(ts|tsx|js)",
   ],
   transform: {
-    "^.+\\.(js|jsx|mjs)$": "babel-jest",
     "^.+\\.(ts|tsx)$": "ts-jest",
   },
   transformIgnorePatterns: [
@@ -20,5 +20,6 @@ module.exports = {
     "js",
     "json"
   ],
-  testEnvironment: 'jsdom',
+  testEnvironment: "jsdom",
+  setupFilesAfterEnv: ["<rootDir>/jest-setup.js"],
 };
